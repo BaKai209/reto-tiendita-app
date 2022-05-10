@@ -1,0 +1,139 @@
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    opacity: 0; 
+    pointer-events: none;
+    transition: opacity .3s .3s;
+    --transform: translateY(0);
+    --transition: transform .3s;
+    z-index: 1000;
+}
+
+.modal--show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .3s;
+    --transform: translateY(0);
+    --transition: transform .3s .3s;
+    
+}
+
+.modal__container{
+    margin: 2rem auto;
+    width: 90%;
+    max-width: 940px;
+    height: 100%;
+    overflow-y: scroll;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 1em 2.5em;
+    display: grid;
+    place-items: center;
+    grid-auto-columns: 100%;
+    transform: var(--transform);
+    transition:var(--transition);
+}
+/*flexbox*/
+.modal__box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal__box-text {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.4+rem;
+}
+
+.modal__box-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal__box-actions {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+
+.modal__title{
+    font-size: 2.5rem;
+}
+/**/
+
+.modal .grid-container img {
+    height: 120px;
+    width: 140px;
+    object-fit: cover;
+}
+
+.modal__box-actions button{
+    margin-left: .4rem;
+    margin-right: .4rem;
+    background-color: #FFF;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.modal__box-actions button[type="submit"] {
+    background-color: var(--primary-color);
+    color: #FFF;
+    width: 100%;
+    font-size: .8rem;
+    font-weight: normal;
+}
+
+.modal__paragraph{
+    margin-top: .8rem;
+    margin-bottom: 1.8rem;
+}
+
+.modal__price {
+    margin: 1rem 0;
+}
+
+.modal__select {
+    margin-top: .4rem;
+    padding: .5rem .4rem;
+}
+
+.modal__img{
+    width: 90%;
+    max-width: 300px;
+    height: 240px;
+    margin-right: 1.4rem;
+}
+
+.modal__close-icon {
+    color: #fff;
+    background-color: #020202;
+    padding: 6px 10px;
+    border: 1px solid ;
+    border-radius: 50%;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 300;
+    transition: background-color .3s;
+}
+
+
+.modal__close-icon:hover{
+    color: #F26250;
+    background-color: #fff;
+}
+
+.modal__close{
+    position: absolute;
+    top: 6%;
+    right: 2%;
+}
+

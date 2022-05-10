@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://res.cloudinary.com/dke83t4p2/image/upload/v1652152382/tiendita/Images/favicon_lcgblf.png" type="image/x-icon">
+    <title>La Tiendita</title>
+    <link rel="stylesheet" href="style/Modal.css">
+    <link rel="stylesheet" href="style/Aside.css">
+    <link rel="stylesheet" href="style/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container container">
+            <h2 class="logo">Tiendita</h2>
+            <div class="menu">
+                    <a href="#">Mexico City</a>
+
+                <button class="shopping-cart btn" id="carrito">
+                    <img src="images/shopping-cart.png" alt="shopping-cart">
+                    <span class="logo-carrito" id="conteo-carrito">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <aside class="aside" id="aside">
+        <div class="sidebar__menu">
+            <p>Entregar en: <b>México City Marriot Reforma Hotel...</b></p>
+            <a href="#" class="modal__close-icon modal__close-sidebar" id="sidebar__close">X</a>
+        </div>
+        <div class="aside__carrito" id="containerCarrito">
+            <!---->
+            
+            <!---->
+        </div>
+        <div class="carrito__box-actions" id="carrito__box-actions">
+            <button class="btn btn-pay" id="btnVaciar">Vaciar canasta</button>
+            <button class="btn btn-pay btn-primary" id="btnPay">
+                <span class="spanCount">6</span>
+                <h4><b>Ir a pagar</b></h4>
+                <span class="spanPrice" id="span-total-price"></span>
+            </button>
+        </div>
+    </aside>
+  
+
+    <main class="main">
+        
+        <!--Modal-->
+        <section class="modal ">
+            <div class="modal__container">
+                <a href="#" class="modal__close-icon modal__close" id="modal__close">X</a>
+                <div class="modal__box" id="containerBoxDetail">
+                    <img src="images/products/tomate.png" class="modal__img">
+                    <article class="modal__box-text"> 
+                        <h2 class="modal__title">¡Bienvenido al sitio!</h2>
+                        <h3>- $69.9 /Kg</h3>
+                        <span>Precios con IVA incluido</span>
+                        <p class="modal__paragraph">Descripcion del producto:</p>
+                        <div class="modal__box-details">
+                            <label for="quality"><b>Selecciona la madurez que desees</b></label>
+                            <select name="" id="">
+                                <option value="">Maduro</option>
+                               
+                            </select>
+                            <div class="modal__box-actions">
+                                <button class="btn">+</button>
+                                <span>250g</span>
+                                <button class="btn">-</button>
+                                <button class="btn">Agregar</button>
+                            </div>
+                            <div class="modal__box" id="containerBoxDetail">
+                                
+                            </div></div>
+                    </article>
+                </div>
+                
+                <div class="container">
+                    <h3>Productos relacionados</h3>
+                    <div class="grid-container" id="containerSugerencias">
+                       
+                        
+                      
+                      
+                    </div>
+                </div>
+               
+               
+            </div>
+        </section>
+        <!---->
+
+        <section class="section banner"> 
+        
+            <div class="hero-image container" >
+                <div class="btn btn-success alert-success" id="checkmarkSuccess">
+                    <img src="images/checkmark.png"
+                    alt="Icon Success"
+                    />
+                    Producto añadido
+                </div>  
+                <div class="hero-image-opacity">
+                    <div class="hero-image-content">
+                        <h2 class="hero-image-title">¡Adquiere todos tus productos favoritos al mejor precio!</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section products">
+            <div class="container">
+                <h3>Ofertas</h3>
+                <div class="card-container grid-container" id="containerOffers">
+                   
+                    
+                  
+                    
+                </div>
+            </div>
+           
+        </section>
+        <section class="section products">
+            <div class="container">
+                <h3>Los más populares</h3>
+                <div class="card-container grid-container" id="containerWithoutOffers">
+                    
+                    
+                </div>
+            </div>
+           
+        </section>
+       
+    </main>
+
+    <footer class="footer">
+
+    </footer>
+    
+    <script src="scripts/index.js"></script>
+    <script src="scripts/SidebarMenu.js"></script>
+    <!--Swiper alert-->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

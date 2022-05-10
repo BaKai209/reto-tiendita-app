@@ -1,0 +1,119 @@
+.aside {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left:0;
+    right: 40vw;
+    transform: translateX(100vw);
+    background-color: #fff;
+    padding: .8rem;
+    transition: opacity .3s .3s;
+    z-index: 1000;
+    transition: all .8s ease-in-out;
+   overflow-y: scroll;
+}
+
+.sidebar--show {
+    opacity: 1;
+    transition: opacity .3s;
+    transform: translateX(40vw);
+    transition: all .8s ease-in-out;
+}
+
+.sidebar__menu {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.aside__carrito {
+    padding: 1rem;    
+}
+
+
+.aside__product-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aside__product {
+    display: flex;
+    align-items: center;
+}
+
+.aside__product-image {
+    width: 100px;
+}
+
+.aside__product-text {
+    padding: 2rem;
+}
+
+.aside__box-actions {
+        display: flex;
+        align-items: center;
+        height: 40px;
+}
+
+
+.aside__box-actions button{
+    margin-left: .2rem;
+    margin-right: .2rem;
+    background-color: #FFF;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.aside__box-actions button[type="submit"] {
+    background-color: var(--primary-color);
+    color: #FFF;
+    width: 100%;
+    font-size: .4rem;
+    font-weight: normal;
+}
+
+.carrito__box-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+#btnPay {
+    width: 50%;
+}
+
+#btnVaciar {
+    width: 60%;
+    color: #333;
+}
+
+.spanCount {
+    margin-right: .2rem;
+    border-radius: 4px;
+    padding: .2rem .4rem;
+    background-color: rgb(68, 107, 139);
+}
+
+.spanPrice {
+    margin-left: .2rem;
+}
+
+/*aside product vacio*/
+.aside__product-vacio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 35%;
+}
+
+.aside__product-vacio img {
+    width: 80%;
+    height: auto;
+}
